@@ -7,7 +7,7 @@ defmodule TodosWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_todos_key",
-    signing_salt: "O5a/iQ+R"
+    signing_salt: "p7bmEcpZ"
   ]
 
   socket "/socket", TodosWeb.UserSocket,

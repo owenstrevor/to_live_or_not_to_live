@@ -13,10 +13,10 @@ config :todos,
 # Configures the endpoint
 config :todos, TodosWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "U5qtLpaWpMOvvC3wMeKmsPyo/UJdbbAT3/tak3cH+dgK5lRp+C8gGV5B8kPV+R2C",
+  secret_key_base: "uUuI/gHT8+RLLWth4q0DT0Z/su9qUUSJvOK9CV7EW8q26Je2N9SMGtfTr/EFK8n6",
   render_errors: [view: TodosWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Todos.PubSub,
-  live_view: [signing_salt: "CBTRECj6"]
+  live_view: [signing_salt: "L13x+ilE"]
 
 # Configures Elixir's Logger
 config :logger, :console,
