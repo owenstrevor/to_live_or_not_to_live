@@ -1,0 +1,11 @@
+<form action="#" phx-submit="add">
+	<%= text_input :task, :title, placeholder: "Task" %>
+	<%= submit "Add", phx_disable_with: "Adding..." %>
+</form>
+
+<%= for task <- @tasks do %>
+	<div>
+		<%= checkbox(:task, :done, phx_click: "toggle_done", phx_value_id: task.id, value: task.done) %>
+		<%= task.title %>	
+		</div>
+<% end %>
